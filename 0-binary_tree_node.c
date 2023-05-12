@@ -32,7 +32,7 @@ if (parent->left != NULL && parent->right != NULL)
 {
 return (NULL);
 }
-if (parent->left == NULL, parent->right == NULL)
+if (parent->left == NULL && parent->right == NULL)
 parent->left->n = value;
 if (parent->left != NULL)
 parent->right->n = value;
