@@ -16,6 +16,7 @@ if (temp == NULL)
 {
 return (NULL);
 }
+
 temp->n = value;
 temp->left = NULL;
 temp->right = NULL;
