@@ -10,12 +10,13 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 binary_tree_t *temp;
-
+/*Create a temporary node*/
 temp = malloc(sizeof(binary_tree_t));
 if (temp == NULL)
 {
 return (NULL);
 }
+/*assign new values*/
 temp->n = value;
 temp->left = NULL;
 temp->right = NULL;
