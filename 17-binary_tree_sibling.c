@@ -14,15 +14,9 @@ return (NULL);
 
 if (node->parent == NULL)
 {
-    return (NULL);
-}
-
-
-sib = malloc(sizeof(binary_tree_t));
-if (sib == NULL)
-{
 return (NULL);
 }
+
 
 if (node->parent->left == node)
 {
