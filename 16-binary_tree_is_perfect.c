@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- *counti - a function to count the left nodes
+ *count - a function to count the left nodes
  *@tree: is a pointer to the root node of the tree to check
  *Return: the number of nodes
  */
@@ -18,14 +18,14 @@ if (tree != NULL)
 c1 = count(tree->left);
 c2 = count(tree->right);
 }
-c = c1 + c2 +1;
+c = c1 + c2 + 1;
 return (c);
 }
 
 /**
  *binary_tree_is_perfect - a function that checks if a binary tree is perfect
  *@tree: is a pointer to the root node of the tree to check
- *Return: 0 if is not perfect and 1 if it is perfect 
+ *Return: 0 if is not perfect and 1 if it is perfect
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
@@ -38,8 +38,8 @@ return (0);
 
 if (tree->left != NULL && tree->right != NULL)
 {
-count1 =1 + count(tree->left);
-count2 =1 + count(tree->right);
+count1 = 1 + count(tree->left);
+count2 = 1 + count(tree->right);
 }
 if (tree->left != NULL && tree->right == NULL)
 {

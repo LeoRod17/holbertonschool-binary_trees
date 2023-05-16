@@ -30,5 +30,5 @@ if (tree->left != NULL && tree->right == NULL)
 count = 1 - binary_tree_balance(tree->left);
 count2 = 1 - binary_tree_balance(tree->right);
 }
-return ((count + 1) - (count2 -1));
+return ((count + 1) - (count2 - 1));
 }
